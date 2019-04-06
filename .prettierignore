@@ -1,7 +1,10 @@
 # package.json
+
 # package-lock.json
+
 tsconfig.json
+
 # tslint.json
+
+# dependencies
 node_modules/
-dist/
-.cache/

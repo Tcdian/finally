@@ -1,18 +1,20 @@
 {
     "name": "finally",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "",
-    "main": "index.js",
+    "main": "dist/finally.js",
     "scripts": {
-        "dev": "webpack-dev-server --config ./build/webpack.dev.conf.js",
-        "build": "webpack --config ./build/webpack.prod.conf.js"
+        "build": "tsc",
+        "test": "jest"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Tcdian/finally.git"
     },
     "keywords": [
-        "immutable"
+        "immutable",
+        "typescript",
+        "ESNext"
     ],
     "author": "tcdian",
     "license": "MIT",
@@ -21,16 +23,10 @@
     },
     "homepage": "https://github.com/Tcdian/finally#readme",
     "devDependencies": {
-        "clean-webpack-plugin": "^2.0.1",
-        "html-webpack-plugin": "^3.2.0",
-        "tslint": "^5.14.0",
-        "typescript": "^3.3.3333",
-        "webpack": "^4.29.6",
-        "webpack-cli": "^3.3.0",
-        "webpack-dev-server": "^3.2.1",
-        "webpack-merge": "^4.2.1"
-    },
-    "dependencies": {
-        "awesome-typescript-loader": "^5.2.1"
+        "@types/jest": "^24.0.11",
+        "jest": "^24.7.1",
+        "ts-jest": "^24.0.2",
+        "tslint": "^5.15.0",
+        "typescript": "^3.4.2"
     }
 }

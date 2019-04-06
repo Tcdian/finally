@@ -1,7 +1,7 @@
 {
     "extends": ["tslint:recommended"],
     "linterOptions": {
-        "exclude": ["node_modules", "dist", "tsconfig.json", "package.json", "package-lock.json", ".cache"]
+        "exclude": ["node_modules", "dist", "tsconfig.json", "package.json", "package-lock.json"]
     },
     "rules": {
         // 是否允许console
@@ -97,7 +97,7 @@
         // 一个缩进必须用4个空格替代
         "indent": [true, "spaces", 4],
         // import按字母顺序引入
-        "ordered-imports": false,
+        "ordered-imports": true,
         // 禁止出现重复的 import
         "no-duplicate-imports": true,
         // 禁止一个文件中出现多个相同的 namespace
@@ -141,6 +141,8 @@
         "space-within-parens": [true, 0],
         // 禁止 finally 内出现 return, continue, break, throw 等
         // finally 会比 catch 先执行
-        "no-unsafe-finally": true
+        "no-unsafe-finally": true,
+        // 代码宽度
+        "max-line-length": [true, 180]
     }
 }
